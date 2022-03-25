@@ -8,7 +8,7 @@ Summary:	HTTP/2 framing layer for Python 2
 Summary(pl.UTF-8):	Warstwa ramek HTTP/2 dla Pythona 2
 Name:		python-hyperframe
 Version:	5.2.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/hyperframe/
