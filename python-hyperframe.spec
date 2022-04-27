@@ -7,6 +7,7 @@
 Summary:	HTTP/2 framing layer for Python 2
 Summary(pl.UTF-8):	Warstwa ramek HTTP/2 dla Pythona 2
 Name:		python-hyperframe
+# keep 5.x here for python2 support
 Version:	5.2.0
 Release:	5
 License:	MIT
@@ -69,6 +70,7 @@ dekodować strumień binary na ramki HTTP/2.
 %py_build
 
 %if %{with tests}
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 %{__python} -m pytest test
 %endif
 %endif
@@ -77,6 +79,7 @@ dekodować strumień binary na ramki HTTP/2.
 %py3_build
 
 %if %{with tests}
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 %{__python3} -m pytest test
 %endif
 %endif
